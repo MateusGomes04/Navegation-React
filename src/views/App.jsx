@@ -1,17 +1,17 @@
 import './App.css'
 import React from 'react'
  
-import { BrowserRouter as Router } from  'react-router-dom' // essa importação mudou
+import { BrowserRouter } from  'react-router-dom' 
  
 import Menu from '../components/layout/Menu'
 import Content from '../components/layout/Content'
  
 const App = props => (
     <div className="App">
-        <Router> // Usamos a importação acima bem aqui
+        <BrowserRouter> 
             <Menu />
             <Content />
-        </Router> // Aqui também
+        </BrowserRouter> 
     </div>
 )
  
